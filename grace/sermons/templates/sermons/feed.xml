@@ -1,0 +1,81 @@
+{% load i18n %}{% load static %}<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+    xmlns:atom="http://www.w3.org/2005/Atom" 
+    xmlns:cc="http://web.resource.org/cc/" 
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+    xmlns:media="http://search.yahoo.com/mrss/" 
+    xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <channel>
+        <atom:link href="http://grace.kharkov.ua/resources/sermons/feed/" rel="self" type="application/rss+xml"/>
+        <title>Проповеди евангельской церкви Благодать, Харьков, Украина</title>
+        <pubDate>Tue, 24 Oct 2017 05:15:38 +0000</pubDate>
+        <lastBuildDate>Mon, 20 Nov 2017 19:22:27 +0000</lastBuildDate>
+        <link>http://grace.kharkov.ua/resources/sermons/feed/</link>
+        <language>ru</language>
+        <copyright>
+            <![CDATA[©Церковь Благодать ]]>
+        </copyright>
+        <docs>http://grace.kharkov.ua</docs>
+        <managingEditor>grace.church.kh@gmail.com (grace.church.kh@gmail.com)</managingEditor>
+        <itunes:summary>
+            <![CDATA[Добро пожаловать на еженедельный аудио подкаст от евангельской церкви 'Благодать', Харьков, Украина. Наше желание, чтобы эти проповеди помогали вам в ваших отношениях с Богом. Заходите на наш сайт grace.kharkov.ua, где вы найдете еще больше ресурсов.]]>
+        </itunes:summary>
+        <image>
+            <url>http://grace.kharkov.ua/static/img/feed.jpg</url>
+            <title>Проповеди евангельской церкви Благодать, Харьков, Украина</title>
+            <link>
+                <![CDATA[http://grace.kharkov.ua/resources/sermons/feed/]]>
+            </link>
+        </image>
+        <itunes:author>проповедники церкви Благодать</itunes:author>
+        <itunes:keywords>Бог, Иисус Христос, Дух Святой, христианская жизнь, Библия, церковь, общество, проповеди, благодать</itunes:keywords>
+        <itunes:category text="Religion &amp; Spirituality">
+            <itunes:category text="Christianity"></itunes:category>
+        </itunes:category>
+        <itunes:image href="http://grace.kharkov.ua/static/img/feed.jpg" />
+        <itunes:explicit>clean</itunes:explicit>
+        <itunes:owner>
+            <itunes:name>
+                <![CDATA[Церковь Благодать]]>
+            </itunes:name>
+            <itunes:email>grace.church.kh@gmail.com</itunes:email>
+        </itunes:owner>
+        <description>
+            <![CDATA[Добро пожаловать на еженедельный аудио подкаст от евангельской церкви 'Благодать', Харьков, Украина. Наше желание, чтобы эти проповеди помогали вам в ваших отношениях с Богом. Заходите на наш сайт grace.kharkov.ua, где вы найдете еще больше ресурсов.]]>
+        </description>
+		        {% for sermon in entries %}
+								
+        <item>
+            <title>{{sermon.title}}</title>
+			{% language 'en' %}
+			
+            <pubDate>{{sermon.date|date:"D, d M Y H:i:s O"}}</pubDate>
+			{% endlanguage %}
+			
+            <guid isPermaLink="true">
+                http://grace.kharkov.ua/resources/sermons/{{sermon.id}}
+            </guid>
+            <link>
+				http://grace.kharkov.ua/resources/sermons/{{sermon.id}}
+			</link>
+            <itunes:image href="http://grace.kharkov.ua/static/img/feed.jpg" />
+            <description>
+				{{sermon.bible_book.title}} {{sermon.chapter_and_verses}} 				{{sermon.preacher.last_name}} {{sermon.preacher.name}}
+			</description>
+            <content:encoded>
+                <![CDATA[{{sermon.description}}]]>
+            </content:encoded>
+            <enclosure length="0" type="audio/mpeg" url="http://grace.kharkov.ua{% static 'media/sermons/' %}{{sermon.audio}}" />
+            <itunes:duration>00:00:00</itunes:duration>
+            <itunes:explicit>clean</itunes:explicit>
+            <itunes:keywords />
+            <itunes:subtitle>
+                <![CDATA[{{sermon.bible_book.abbreviation}} {{sermon.chapter_and_verses}}]]>
+            </itunes:subtitle>
+            <itunes:author>{{sermon.preacher.last_name}} {{sermon.preacher.name}}</itunes:author>
+        </item>
+        {% endfor %}
+					
+    </channel>
+</rss>

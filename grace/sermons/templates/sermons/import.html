@@ -1,0 +1,9 @@
+<ul>
+{% for sermon in sermons %}
+    <li><b>{{sermon.title}}</b> <br>
+        Дата: {{sermon.date}} <br>
+        Место Писания: {{sermon.bible_book.title}} {{sermon.chapter_and_verses}}<br>
+        Проповедник: {{sermon.preacher.last_name}} {{sermon.preacher.name}} <br>
+    </li>
+{% endfor %}
+</ul>

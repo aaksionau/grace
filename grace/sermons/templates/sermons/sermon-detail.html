@@ -1,0 +1,33 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block content %}
+<div class="row sermon-item">
+  <h1>{{sermon.title}}</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <img class="img-responsive" src="/static/media/{{sermon.bible_book.image}}"
+        alt="{{sermon.bible_book.title}}">
+    </div>
+    <div class="col-md-8">
+      <p>
+        <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+        {{sermon.bible_book.title}} {{sermon.chapter_and_verses}}</p>
+      <p>
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        {{sermon.preacher.last_name}} {{sermon.preacher.name}}</p>
+      <p>
+        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+        {{sermon.date|date:'d F Y'}}</p>
+      <audio src="{% static 'media/' %}{{sermon.audio}}" />
+    </div>
+  </div>
+  {{sermon.description | safe}}
+</div>
+{% endblock content %}
+{% block scripts %} {{ block.super }}
+<script src="/static/js/audio.min.js"></script>
+<script>
+  audiojs.events.ready(function () {
+    var as = audiojs.createAll();
+  });
+</script> {% endblock scripts %}

@@ -1,0 +1,17 @@
+{% load doublequote_quote%}
+{
+    "data": [
+    {% for book in books %}
+    {
+    "author":"{{book.author | doublequote_quote}}",
+    "category":"{{book.category}}",
+    "title":"{{book.title  | doublequote_quote}}",
+    "annotation":"{{book.annotation | doublequote_quote}}"
+    }
+        {% if forloop.last %}
+
+        {% else %}
+            ,
+        {% endif %}
+    {% endfor%}]
+}

@@ -1,0 +1,15 @@
+<section class="events">
+    <h4>Предстоящие события</h4>
+    <ul>
+        {% for event in aside_events %}
+        <li>
+            <p class="date">
+                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{event.date|date:"d F Y"}}</p>
+            <a href="{{event.get_absolute_url}}" alt="{{event.title}}">{{event.title}}
+            </a>
+        </li>
+        </li>
+
+        {% endfor %}
+    </ul>
+</section>

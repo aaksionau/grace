@@ -1,0 +1,8 @@
+<ul>
+{% for book in books %}
+    <li>{{book.title}}
+        {{book.author.name}}
+        {{book.category.title}}
+    </li>
+{% endfor %}
+</ul>

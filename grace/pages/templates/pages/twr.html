@@ -1,0 +1,42 @@
+{% extends "pages/base.html" %} 
+{% load static %}
+{% block content %}
+
+
+<h1 class="title">{{data.title}}</h1>
+  {{data.body | safe}}
+  <div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#domachnii_ochag" aria-controls="domachnii_ochag" role="tab" data-toggle="tab">Домашний очаг</a></li>
+      <li role="presentation"><a href="#iz_vodovorota" aria-controls="iz_vodovorota" role="tab" data-toggle="tab">Из водоворота</a></li>
+      <li role="presentation"><a href="#900_secend_dobroti" aria-controls="900_secend_dobroti" role="tab" data-toggle="tab">900 Секунд доброты</a></li>
+      <li role="presentation"><a href="#zisn_kak_ona_est" aria-controls="zisn_kak_ona_est" role="tab" data-toggle="tab">Жизнь, как она есть</a></li>
+      <li role="presentation"><a href="#gde_vi_geroi" aria-controls="gde_vi_geroi" role="tab" data-toggle="tab">Где вы герои</a></li>
+    </ul>
+  
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="domachnii_ochag">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/41498256&amp;color=%23b7914f&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="iz_vodovorota">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/46701034&amp;color=%23b7914f&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="900_secend_dobroti">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/213820922&amp;color=%23b7914f&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="zisn_kak_ona_est">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/46705318&amp;color=%23b7914f&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="gde_vi_geroi">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/298677207&amp;color=%23b7914f&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+      </div>
+    </div>
+  
+  </div>
+{% endblock content %} 
+{% block scripts %} {{ block.super }}
+
+</script> {% endblock scripts %}

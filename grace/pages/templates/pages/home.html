@@ -1,0 +1,93 @@
+{% extends "base.html" %} 
+{% load static %} 
+
+{% block body %}
+<header class="home-header">
+    <div class="container">
+        {% include 'pages/elements/menu.html' with mainMenuPages=mainMenuPages %}
+    </div>
+</header>
+<main class="home-main">
+    <section class="default">
+        <div class="container text-center">
+            <h1>Присоединяйтесь к нам</h1>
+            <h2>Воскресное богослужение: 10.00</h2>
+            <p>Первый раз, не знаете что ожидать от богослужения? Тогда вам
+                <a href="/about-church/first-time-in-church/">cюда</a>. </p>
+        </div>
+    </section>
+    {% include 'sermons/home.html' with sermons=sermons %}
+    <section class="church-life">
+        <div class="container">
+            <h2 class="text-center">Новости и события</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    {% include 'photos/home.html' with galleries=galleries %}
+                </div>
+                <div class="col-md-4 home-events">
+                    {% include 'events/home_events.html' with events=events %}
+                </div>
+                <div class="col-md-4 home-news">
+                    {% include 'events/home_news.html' with news=news %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="be-envolved">
+        <div class="container">
+            <h2 class="text-center">Участвуйте</h2>
+            <div class="row">
+                {{data.body|safe}}
+            </div>
+        </div>
+
+    </section>
+    <section class="schedule">
+        {% include 'pages/schedule.html' %}
+    </section>
+    <section class="church-location default">
+        <div class="container">
+            <header>
+                <h2 class="text-center">Где мы находимся?</h2>
+            </header>
+            <div class="row">
+                <div class="col-md-6" id="map">
+
+                </div>
+                <div class="col-md-6 contacts">
+                    <h4>Церковь "Благодать"</h4>
+                    <p>переулок Партизанский, 4Б</p>
+                    <p>Харьков, Украина</p>
+                    <p>
+                        <a href="mailto:info@grace.kharkov.ua">info[at]grace.kharkov.ua</a>
+                    </p>
+                    <hr>
+                    <p>
+                        <b>Время богослужений</b>
+                    </p>
+                    <p>Воскресение: 10.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% include 'pages/elements/footer.html' %} {% endblock body %} {% block scripts %} {{ block.super }}
+<script>
+    function initMap() {
+        var church = {
+            lat: 50.016588,
+            lng: 36.325086
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: church
+        });
+        var marker = new google.maps.Marker({
+            position: church,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEHjLijfMG4eNvrS8zQjqO47LlZbkwA_Y&callback=initMap">
+</script> {% endblock scripts %}

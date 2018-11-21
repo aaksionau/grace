@@ -1,0 +1,22 @@
+{% regroup schedule_events by event_day as days_list %}
+
+<div class="container">
+    <div class="row text-center">
+        <h2>Расписание служений среди недели</h2>
+        <p>Перед посещением: позвоните пожалуйста по тел.: (057)265-26-34 и уточните что событие будет.</p>
+    </div>
+    <div class="row schedule">
+        {% for day in days_list %}
+        <div class="col-md-2 event">
+            <h3>{{day.grouper}}</h3>
+            {% for event in day.list %}
+            <div class="row">
+                <div class="col-md-3">{{event.time}}</div>
+                <div class="col-md-9">{{event.title}}</div>
+            </div>
+            {% endfor%}
+        </div>
+        {% endfor %}
+    </div>
+
+</div>

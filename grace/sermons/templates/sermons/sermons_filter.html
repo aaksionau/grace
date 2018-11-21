@@ -1,0 +1,29 @@
+<div class="row sermons_filter">
+    <form class="form" method="get" action="/resources/sermons/">
+        {% csrf_token %}
+        <div class="col-md-4">
+            <select class="form-control input-md" name="preacher">
+                <option value="0">Выберите проповедника</option>
+                {% for p in preachers %}
+                <option {% if p.pk == selected_preacher_id %} selected {% endif %} value="{{p.pk}}">{{p.last_name}} {{p.name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select class="form-control input-md" name="bible_book">
+                <option value="0">Выберите книгу Библии</option>
+                {% for b in bible_books %}
+
+                <option {% if b.pk == selected_bible_book_id %} selected {% endif %} value="{{b.pk}}">{{b.title}}</option>
+
+                {% endfor%}
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-default" type="submit">Фильтровать</button>
+        </div>
+        <div class="col-md-2">
+            <a class="btn btn-default" href="/resources/sermons/">Очистить</a>
+        </div>
+    </form>
+</div>

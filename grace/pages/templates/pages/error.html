@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+<header class="header-pages">
+        <div class="container">
+                <div class="logo">
+                        <img class="img-responsive" src="{% static 'img/logo_ehb.png' %}" alt="Церковь евангельских христиан-баптистов 'Благодать', г. Харьков, Украина">
+                </div>
+        </div>
+</header>
+
+<div class="main-pages">
+    <div class="container">
+        <div class="row text">
+            <main class="col-md-9">
+                {% block content %}
+                <h1>{{data.title}}</h1>
+                {{data.body | safe}}
+                {% endblock content %}
+            </main>
+        </div>
+    </div>
+</div>
+{% include 'pages/elements/footer.html' %}
+{% endblock body %}

@@ -1,0 +1,35 @@
+{% load static %}
+<section class="default sermons">
+  <div class="container">
+    <div class="row">
+      <header>
+        <h2 class="text-center">Проповеди</h2>
+        <p class="text-center">Вы также можете подписаться на наш аудио подкаст, чтобы слушать проповеди с вашего телефона.
+          <a href="/resources/phone/">Как?</a>
+        </p>
+      </header>
+      
+      {% for s in sermons %}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail" style="background-image:url('{% static "/media/" %}{{s.bible_book.image}}');background-repeat: no-repeat;">
+          <div class="caption">
+            <h3>
+              <a href="{{s.get_absolute_url}}"> {{s.title}}</a>
+            </h3>
+            <hr>
+            <ul class="sermon-details">
+              <li>{{s.bible_book.title}} {{s.chapter_and_verses}}</li>
+              <li>{{s.preacher.last_name}} {{s.preacher.name}}</li>
+              <li>{{s.date|date:'d F Y'}}</li>
+            </ul>
+            <p>
+              <a href="{{s.get_absolute_url}}" class="btn btn-default" role="button">Слушать</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endfor%}
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+{% extends "pages/base.html" %} {% block content %}
+
+
+<h1 class="title">{{data.title}}</h1>
+<div class="events">
+{{data.body | safe}}
+
+{% for event in events %}
+    <div class="item">
+        <p class="date"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{event.date|date:"d F Y"}}</p>
+        <h3><a href="{{event.get_absolute_url}}" alt="{{event.title}}">{{event.title}}</a></h3>
+        <div>
+            {% if event.short_description %}
+                {{event.short_description|safe}}
+            {% endif %}
+        </div>
+        <a href="{{event.get_absolute_url}}" alt="{{event.title}}" class="btn btn-default">читать подробнее</a>
+    </div>
+{% endfor %}
+
+
+<div class="row pagination text-center">
+    <span class="step-links">
+      {% if events.has_previous %}
+      <a href="?page={{ events.previous_page_number }}">
+        << предыдущая</a>
+          {% endif %}
+
+          <span class="current">
+            Страница {{ events.number }} из {{ events.paginator.num_pages }}.
+          </span>
+
+          {% if events.has_next %}
+          <a href="?page={{ events.next_page_number }}">следующая >></a>
+    {% endif %}
+    </span>
+  </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,13 @@
+<h3>Предстоящие события</h3>
+<ul>
+    {% for item in events %}
+    <li>
+        <p class="date">
+            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{item.date|date:"d F Y"}}</p>
+        <h4>
+            <a href="{{item.get_absolute_url}}" alt="{{item.title}}">{{item.title}}</a>
+        </h4>
+        {{item.short_description | safe}}
+    </li>
+    {% endfor %}
+</ul>

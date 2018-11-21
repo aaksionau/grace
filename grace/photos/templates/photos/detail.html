@@ -1,0 +1,40 @@
+{% extends "pages/base.html" %} 
+
+{% block stylesheets %} 
+{{ block.super }}
+<link rel='stylesheet' href='/static/css/unite-gallery.css' type='text/css' /> 
+<link rel='stylesheet' href='/static/css/ug-theme-default.css' type='text/css' /> 
+{% endblock stylesheets %}
+
+{% block content %}
+<div class="gallery">
+    <h1>{{gallery.title}}</h1> 
+    {{gallery.body|safe}}
+    <div id="gallery" style="display:none;">
+        {% for photo in photos %}
+            <img    class="img-responsive" 
+                    src="/static/media/{{photo.thumbnail}}" 
+                    width="250" 
+                    alt="{{photo.description}}" 
+                    data-image="/static/media/{{photo.image}}"
+                    data-description="{{photo.description}}"> 
+        {% endfor%}
+    </div>
+</div>
+{% endblock content %}
+
+{% block scripts %} 
+{{ block.super }}
+<script type='text/javascript' src='/static/js/unitegallery.min.js'></script> 
+<script type='text/javascript' src='/static/js/ug-theme-tiles.js'></script>
+<script type="text/javascript"> 
+			
+            jQuery("#gallery").unitegallery({
+                tile_enable_image_effect:true,
+                tile_image_effect_type: "sepia",
+                tile_enable_overlay:false,
+                tile_enable_icons:false,
+            });
+
+</script>
+</script> {% endblock scripts %}

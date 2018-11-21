@@ -1,0 +1,9 @@
+<section class="aside">
+    <ul>
+        {% for page in aside_menu_items %}
+        <li class='{% if page.alias == active_child_alias %}active{% endif %}'>
+            <a href="{{page.get_absolute_url}}" alt="{{page.title}}">{{page.title}}</a>
+        </li>
+        {% endfor%}
+    </ul>
+</section>

@@ -1,0 +1,63 @@
+{% extends "pages/base.html" %} {% block stylesheets %}
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"> {{ block.super }} {% endblock stylesheets %} {% block content %}
+
+<h1 class="title">{{data.title}}</h1>
+<div class="books">
+    {{data.body | safe}}
+</div>
+
+<table id="books" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th>Автор</th>
+            <th>Категория</th>
+            <th>Название книги</th>
+            <th>Аннотация</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Автор</th>
+            <th>Категория</th>
+            <th>Название книги</th>
+            <th>Аннотация</th>
+        </tr>
+    </tfoot>
+</table>
+
+{% endblock content %} {% block scripts %} {{ block.super }}
+<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#books').DataTable(
+            {
+                "ajax": {
+                "url": 'http://grace.kharkov.ua/resources/books/data/',
+                "cache": true
+                },
+                "columns": [
+                    { "data": "author" },
+                    { "data": "category" },
+                    { "data": "title" },
+                    { "data": "annotation" }
+                ],
+                "order": [[1, "asc"]],
+                "language": {
+                    "lengthMenu": "Показано _MENU_ книг на странице",
+                    "zeroRecords": "Не найдено ни одной книги - приносим извинения",
+                    "info": "Показана _PAGE_ страница из _PAGES_",
+                    "infoEmpty": "Нет записей",
+                    "infoFiltered": "(осуществлен фильтр из _MAX_ всех записей)",
+                    "search": "Поиск: ",
+                    "paginate": {
+                        "first": "Первая",
+                        "last": "Последняя",
+                        "next": "Следующая",
+                        "previous": "Предыдущая"
+                    },
+                }
+            }
+        );
+    });
+</script> {% endblock scripts %}

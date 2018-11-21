@@ -1,0 +1,13 @@
+<section class="sermons-book">
+    <h4>Проповеди по книгам</h4>
+    <ul>
+        {% for book in sermon_books %}
+        <li class="book">
+            <a href="/resources/sermons/?bible_book={{book.id}}">{{book.title}}<span class="badge">{{book.num_sermons}}</span>
+            </a>
+        </li>
+        </li>
+
+        {% endfor %}
+    </ul>
+</section>

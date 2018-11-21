@@ -1,0 +1,62 @@
+{% extends "pages/base.html" %}
+
+{% block content %}
+<div class="contact-page">
+    <h1>Мы находимся здесь:</h1>
+    <address>
+            <h4>Церковь "Благодать"</h4>
+            <p>переулок Партизанский, 4Б</p>
+            <p>Харьков, Украина</p>
+            <p>
+                <a href="mailto:info@grace.kharkov.ua">info[at]grace.kharkov.ua</a>
+            </p>
+            <hr>
+            <p>
+                <b>Время богослужений</b>
+            </p>
+            <p>Воскресение: 10.00</p>
+    </address>
+    <div class="row" id="map">
+
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+
+            {% if thankyou %}
+                <div>{{ thankyou }}</div>
+            {% else %}
+                <form action="/contacts/" method="post" class="feedback">
+                    <h1>{{data.title}}</h1>
+                    {{data.body | safe}}
+                    
+                    <div class="thankyou">
+                        {% csrf_token %} 
+                        {{ form }}
+                    </div>
+                    <div>
+                        <input type="submit" class="btn btn-default" value="Отправить" />
+                    </div>
+                </form>
+            {% endif %}
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+{% endblock content %}
+{% block scripts %} {{ block.super }}
+<script>
+    function initMap() {
+        var church = { lat: 50.016588, lng: 36.325086 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: church
+        });
+        var marker = new google.maps.Marker({
+            position: church,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEHjLijfMG4eNvrS8zQjqO47LlZbkwA_Y&callback=initMap">
+</script> {% endblock scripts %}

@@ -1,0 +1,7 @@
+<ul>
+    {% for book in books %}
+    <li>
+        <b>{{book.part_of_bible}}</b>{{book.order}} {{book.title}} {{book.abbreviation}}
+    </li>
+    {% endfor %}
+</ul>

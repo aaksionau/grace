@@ -1,0 +1,17 @@
+{% load static %}
+<h3 class="text-center">Фотографии из жизни церкви</h3>
+
+{% for g in galleries %}
+
+<div class="item">
+        <figure>
+            <a class="gallery" href="{{g.get_absolute_url}}">
+                <img src="{% static 'media/' %}{{g.main_image}}" alt="{{g.title}}">
+            </a>
+
+            <figcaption>
+                {{g.title}}
+            </figcaption>
+        </figure>
+    </div>
+{% endfor%}

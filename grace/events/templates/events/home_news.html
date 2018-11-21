@@ -1,0 +1,12 @@
+<h3>Новости церкви</h3>
+<ul>
+    {% for item in news %}
+    <li>
+        <p class="date">
+            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{item.date|date:"d F Y"}}</p>
+        <h4>
+            <a href="{{item.get_absolute_url}}" alt="{{item.title}}">{{item.title}}</a>
+        </h4>
+    </li>
+    {% endfor %}
+</ul>

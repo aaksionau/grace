@@ -1,0 +1,57 @@
+{% extends "pages/base.html" %} 
+{% load static %}
+{% block content %}
+
+
+<h1 class="title">Проповеди</h1>
+<div class="sermons">
+  {{data.body | safe}}
+  
+  {% include 'sermons/sermons_filter.html' with preachers=preachers bible_books=bible_books %}   
+
+  {% for s in sermons %}
+  <div class="row sermon_details">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="img-thumbnail" src="/static/media/{{s.bible_book.image}}" alt="{{s.bible_book.title}}">
+      </div>
+      <div class="col-md-8">
+        <h3><a href="{{s.get_absolute_url}}" alt="{{s.title}}">{{s.title}}</a></h3>
+        <p>
+          <span class="glyphicon glyphicon-book" aria-hidden="true"></span> {{s.bible_book.title}} {{s.chapter_and_verses}}</p>
+        <p>
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{s.preacher.last_name}} {{s.preacher.name}}</p>
+        <p>
+          <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{s.date|date:'d F Y'}}</p>
+        <audio src="{% static 'media/sermons/' %}{{s.audio}}" preload="metadata" />
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+
+  <div class="row pagination text-center">
+    <span class="step-links">
+      {% if sermons.has_previous %}
+      <a href="?page={{ sermons.previous_page_number }}">
+        << предыдущая</a>
+          {% endif %}
+
+          <span class="current">
+            Страница {{ sermons.number }} из {{ sermons.paginator.num_pages }}.
+          </span>
+
+          {% if sermons.has_next %}
+          <a href="?page={{ sermons.next_page_number }}">следующая >></a>
+          {% endif %}
+    </span>
+  </div>
+</div>
+{% endblock content %} 
+{% block scripts %} {{ block.super }}
+<script src="/static/js/audio.min.js"></script>
+<script>
+  audiojs.events.ready(function () {
+    var as = audiojs.createAll();
+  });
+</script> {% endblock scripts %}
