@@ -9,7 +9,6 @@ coverage = "*"
 "flake8-html" = "*"
 django-debug-toolbar = "*"
 
-
 [packages]
 django = "==2.0.9"
 django-summernote = "*"
@@ -19,7 +18,7 @@ requests = "*"
 unidecode = "*"
 "fabric3" = "*"
 python-decouple = "*"
-
+pytz = "*"
 
 [requires]
 python_version = "3.6"
