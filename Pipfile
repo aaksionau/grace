@@ -11,9 +11,10 @@ django-debug-toolbar = "*"
 
 
 [packages]
-django = "==2.0.7"
+django = "==2.0.9"
 django-summernote = "*"
 "psycopg2" = "*"
+"psycopg2-binary" = "*"
 requests = "*"
 unidecode = "*"
 "fabric3" = "*"
