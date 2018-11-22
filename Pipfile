@@ -8,6 +8,7 @@ coverage = "*"
 "flake8" = "*"
 "flake8-html" = "*"
 django-debug-toolbar = "*"
+rope = "*"
 
 [packages]
 django = "==2.1.3"

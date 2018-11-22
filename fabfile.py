@@ -6,6 +6,8 @@ env.use_ssh_config = True
 env.hosts = ["webfaction"]
 
 project_name = "grace"
+python_version = "3.7"
+
 
 env.remote_app_dir = f'/home/paloni/webapps/{project_name}_project/{project_name}/'
 env.remote_app_static_dir = f'/home/paloni/webapps/{project_name}_static/'
@@ -81,7 +83,7 @@ def deploy_to_server():
     with cd(f'{env.remote_app_dir}'):
         run('git pull origin master')
 
-    manage_py = f'cd {env.remote_app_dir}/{project_name}/; python3.6 manage.py'
+    manage_py = f'cd {env.remote_app_dir}/{project_name}/; python{python_version} manage.py'
 
     run(f'{manage_py} migrate --settings={project_name}.settings.production')
     run(f'{manage_py} collectstatic --settings={project_name}.settings.production --noinput')
