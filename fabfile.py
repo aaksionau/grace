@@ -7,9 +7,28 @@ env.hosts = ["webfaction"]
 
 project_name = "grace"
 
-env.remote_app_dir = '/home/paloni/webapps/{project_name}_project/echb/'
+env.remote_app_dir = f'/home/paloni/webapps/{project_name}_project/{project_name}/'
 env.remote_app_static_dir = f'/home/paloni/webapps/{project_name}_static/'
 env.remote_apache_dir = '/home/paloni/webapps/{project_name}_project/apache2/'
+
+
+def run_command(command):
+    return f"python manage.py {command} --settings={project_name}.settings.local"
+
+
+@task
+def runserver():
+    local(run_command('runserver'))
+
+
+@task
+def makemigrations():
+    local(run_command('makemigrations'))
+
+
+@task
+def migrate():
+    local(run_command('migrate'))
 
 
 @task
