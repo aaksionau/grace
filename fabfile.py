@@ -84,7 +84,7 @@ def deploy_to_server():
         run('git pull origin master')
 
     manage_py = f'cd {env.remote_app_dir}/{project_name}/; python{python_version} manage.py'
-
+    
     run(f'{manage_py} migrate --settings={project_name}.settings.production')
     run(f'{manage_py} collectstatic --settings={project_name}.settings.production --noinput')
 
