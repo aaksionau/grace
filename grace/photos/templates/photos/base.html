@@ -4,19 +4,17 @@
 {{data.body|safe}}
 <div class="galleries row">
     {% for g in galleries %}
-    <div class="item">
-        <figure>
-            <a class="gallery" href="{{g.get_absolute_url}}">
-                <img src="{% static 'media/' %}{{g.main_image}}" alt="{{g.title}}">
-            </a>
+        <div class="item">
+            <figure>
+                <a class="gallery" href="{{g.get_absolute_url}}">
+                    <img class="gallery__image" src="{% static 'media/' %}{{g.main_image}}" alt="{{g.title}}">
+                </a>
 
-            <figcaption>
-                {{g.title}}
-            </figcaption>
-        </figure>
-
-
-    </div>
+                <figcaption>
+                    {{g.title}}
+                </figcaption>
+            </figure>
+        </div>
     {% endfor%}
 </div>
 {% endblock content %}
