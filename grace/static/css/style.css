@@ -393,6 +393,9 @@ footer ul li a {
   opacity: 0.7;
   font-weight: 700;
 }
+.main-pages .galleries .gallery__image {
+  width: 300px;
+}
 .main-pages .contact-page .btn-default {
   margin-top: 15px;
 }
