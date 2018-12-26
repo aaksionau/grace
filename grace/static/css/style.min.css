@@ -1,1 +1,497 @@
-a,p{color:#333}.headerText b,.headerText span.right{text-align:right}.headerText b,.headerText span{display:block}h1,h2,h3,h4,h5{font-family:Roboto,sans-serif;color:#595959;font-weight:300}a{text-decoration:underline}h1{font-size:2.7em}h2{font-size:2.5em}.header-pages .navbar .navbar-nav>li>a,.home-header .navbar .navbar-nav>li>a,.top-menu .navbar-nav>li>a{font-size:1.1em;font-family:Roboto;text-transform:uppercase;text-decoration:none}.top-menu{background-color:transparent;border:none}.top-menu .navbar-collapse{margin:35px 0 10px}.top-menu .navbar-nav>li>a{color:#fff}.top-menu .navbar-nav>li>a:hover{background-color:#C7A97D;padding:15px}.gallery-item .item{float:left;margin:10px 50px 10px 0;position:relative;width:300px}.gallery-item .item figcaption{position:absolute;top:72%;background-color:#020202;color:#fff;width:100%;padding:16px;opacity:.7;font-weight:700}.home-header{background-image:url(/static/img/main_2.jpg);background-position:center;background-repeat:no-repeat;background-blend-mode:soft-light;background-color:#C7A97D;height:47em}.home-header .logo img{margin-top:10px}.home-header .navbar{background-color:transparent;border:none;margin-top:25px}.home-header .navbar .navbar-collapse{margin:35px 0 10px}.home-header .navbar .navbar-nav>li>a{color:#fff}.home-header .navbar .navbar-nav>li>a:hover{background-color:#C7A97D;padding:15px}.home-header .navbar-nav{background-color:#a28055}.home-header .navbar-default .navbar-nav>.active>a,.home-header .navbar-default .navbar-nav>.active>a:focus,.home-header .navbar-default .navbar-nav>.active>a:hover{background-color:#7B6341;color:#fff;padding:15px}.home-main section{padding:3vh 0;margin:3vh 0}.home-main section h2{margin:20px 0}.home-main section header{margin-bottom:30px}.home-main .sermons{background-color:#e8dfd3}.home-main .sermons .thumbnail h3 a,.home-main .sermons .thumbnail p,.home-main .sermons .thumbnail ul li{color:#f5f0e8}.home-main .sermons .thumbnail h3{margin-top:5px;height:2em}.home-main .sermons .thumbnail h3 a{text-decoration:none}.home-main .sermons .thumbnail .caption{background-color:#382d1e;opacity:.7;border-radius:5px}.home-main .sermons .thumbnail .caption .sermon-details{list-style-type:none;padding-left:0}.home-main .sermons .thumbnail .caption .btn{text-decoration:none}.home-main .schedule{margin-top:50px}.home-main .schedule .event{border-right:1px solid #999;padding-bottom:20px}.home-main .schedule .event:last-child{border-right:0}.home-main .be-envolved{background-image:url(/static/img/groups_cropped.jpg);background-attachment:fixed}.home-main .be-envolved .text,.home-main .be-envolved a,.home-main .be-envolved h2{color:#fff}.home-main #map{height:300px;width:50%}.home-main .contacts{padding-left:5%;padding-top:2%}.home-main .home-events ul,.home-main .home-news ul{list-style-type:none;padding-left:0}.home-main .home-events ul li,.home-main .home-news ul li{margin:30px 0}.home-main .home-events h3{color:#4293C7}.home-main .church-life .item{position:relative;width:300px;float:none;margin:10px auto}.home-main .church-life .item figcaption{position:absolute;top:72%;background-color:#020202;color:#fff;width:100%;padding:16px;opacity:.7;font-weight:700}footer{margin-top:1%;background-color:#c5af90;width:100%}footer ul{list-style-type:none;height:60px;padding:20px 0 0;margin:20px auto 0;width:44%}footer ul li{float:left}footer ul li a{color:#fff;padding:20px}.header-pages{background-color:#595959;border-bottom:2px solid #5a482f;width:100%;height:120px;z-index:1000}.header-pages .logo img{margin-top:10px}.header-pages .navbar{background-color:transparent;border:none}.header-pages .navbar .navbar-collapse{margin:35px 0 10px}.header-pages .navbar .navbar-nav>li>a{color:#fff}.header-pages .navbar .navbar-nav>li>a:hover{background-color:#C7A97D;padding:15px}.header-pages .navbar-default .navbar-nav>.active>a,.header-pages .navbar-default .navbar-nav>.active>a:focus,.header-pages .navbar-default .navbar-nav>.active>a:hover{background-color:#C7A97D;color:#fff;padding:15px}.main-pages main{padding:0 20px}.main-pages .text{margin:30px 15px}.main-pages .text .nav-tabs>li>a{background-color:#f5f0e8;color:#333}.main-pages .text .nav-tabs>li.active>a,.main-pages .text .nav-tabs>li.active>a:focus,.main-pages .text .nav-tabs>li.active>a:hover{background-color:#C79855;color:#fff}.main-pages .text .gallery img{padding:0}.main-pages .text h1{margin-bottom:20px;position:static;border-left:10px solid;margin-left:-20px;padding-left:10px}.main-pages .text aside{margin-top:40px}.main-pages .text aside section{margin:40px 0}.main-pages .text aside section h4{color:#7B6341;border-bottom:2px solid}.main-pages .text aside .aside ul{list-style-type:none;padding:0}.main-pages .text aside .aside ul li{margin-bottom:10px}.main-pages .text aside .aside ul li.active,.main-pages .text aside .aside ul li:hover{color:#595959;border-left:3px solid #4293C7;margin-left:-15px;transition-delay:.1s}.main-pages .text aside .aside ul li.active a,.main-pages .text aside .aside ul li:hover a{padding-left:12px;transition-delay:.1s;color:#4293C7}.main-pages .text aside .aside ul li a{font-size:1.2em;text-decoration:none}.main-pages .text aside .events ul,.main-pages .text aside .sermons-book ul{list-style-type:none;padding-left:0}.main-pages .text aside .events ul li.book,.main-pages .text aside .sermons-book ul li.book{line-height:2em}.main-pages .text aside .events ul li p.date,.main-pages .text aside .sermons-book ul li p.date{margin:0 0 5px}.main-pages .text aside .events ul li a,.main-pages .text aside .sermons-book ul li a{line-height:1.5em}.main-pages .text aside .events ul li a .badge,.main-pages .text aside .sermons-book ul li a .badge{margin-left:10px}.main-pages .text aside .events ul li a .btn,.main-pages .text aside .sermons-book ul li a .btn{margin:20px 0}.main-pages .text aside .events ul li{padding:0 0 20px}.main-pages .dataTables_wrapper .dataTables_paginate .paginate_button{padding:.2em 0}.main-pages .dataTables_wrapper .dataTables_paginate .paginate_button:hover{background:#fff!important;border:none}.main-pages .sermons .sermon_details{margin:15px 20px 10px 0;border:1px solid #ccc;border-radius:7px;padding:0 15px}.main-pages .sermons .sermon_details .col-md-4{padding-left:0;padding-bottom:0}.main-pages .sermons .sermon_details .col-md-4 img{width:100%;padding:0;margin:0;border-radius:5px 0 0 5px}.main-pages .sermons .sermons_filter{margin:30px 20px 30px 0;background-color:#C7A97D;padding:15px}.main-pages .sermons .pagination{display:block;margin-top:50px}.main-pages .sermon-item .row{margin-top:40px}.main-pages .sermon-item .row .col-md-8{margin-top:30px}.main-pages .audiojs .play-pause{width:30px!important}.main-pages .galleries .item{float:left;margin:10px 50px 10px 0;position:relative;width:300px}.main-pages .galleries .item figcaption{position:absolute;top:72%;background-color:#020202;color:#fff;width:100%;padding:16px;opacity:.7;font-weight:700}.main-pages .contact-page .btn-default{margin-top:15px}.main-pages .contact-page #map{height:400px;width:100%}.main-pages .events .item{margin:50px 0}.main-pages .events .item .date{font-size:16px}.main-pages .events .item h3{margin-top:0}.main-pages .facebook-messages{margin-top:60px}.headerText{color:#fff;font-family:Roboto,sans-serif;font-weight:300;font-size:2em;padding:60px;margin-top:1em}.headerText b{font-weight:400;padding-top:1em;font-style:italic}@media screen and (max-width:600px){.logo{left:0!important;z-index:0;width:260px}#map,.header-pages .logo img{width:100%!important}.navbar-header .navbar-toggle{z-index:100;background-color:#fff;margin-top:35px}.navbar .navbar-collapse{position:relative;margin-top:0}.home-events,.home-news{margin:50px 20px}.be-envolved .row{margin:0 15px}footer .menu-footer{height:120px}footer ul li a{padding:0}.sermons .audiojs{display:none}.sermon_details .col-md-4{padding-right:0}.main-pages .text{margin:30px 0}.main-pages .text aside{margin-top:45px;position:static;left:65%;padding:40px 0}.header-pages .navbar{z-index:100}.header-pages .nav{background-color:#7B6341}.navbar-default .navbar-nav .open .dropdown-menu>li>a{color:#deddce}}
+/*------------------GENERAL---------------*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif;
+  color: #595959;
+  font-weight: 300;
+}
+p {
+  color: #333333;
+}
+a {
+  color: #333333;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 2.7em;
+}
+h2 {
+  font-size: 2.5em;
+}
+/*Mixins*/
+.top-menu {
+  background-color: transparent;
+  border: none;
+}
+.top-menu .navbar-collapse {
+  margin: 35px 0 10px 0px;
+}
+.top-menu .navbar-nav > li > a {
+  font-size: 1.1em;
+  font-family: Roboto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+.top-menu .navbar-nav > li > a:hover {
+  background-color: #C7A97D;
+  padding: 15px 15px;
+}
+.gallery-item .item {
+  float: left;
+  margin: 10px 50px 10px 0;
+  position: relative;
+  width: 300px;
+}
+.gallery-item .item figcaption {
+  position: absolute;
+  top: 72%;
+  background-color: #020202;
+  color: #fff;
+  width: 100%;
+  padding: 16px;
+  opacity: 0.7;
+  font-weight: 700;
+}
+/*------------Home------------------*/
+.home-header {
+  background-image: url(/static/img/main_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-color: #C7A97D;
+  height: 47em;
+}
+.home-header .logo img {
+  margin-top: 10px;
+}
+.home-header .navbar {
+  background-color: transparent;
+  border: none;
+  margin-top: 25px;
+}
+.home-header .navbar .navbar-collapse {
+  margin: 35px 0 10px 0px;
+}
+.home-header .navbar .navbar-nav > li > a {
+  font-size: 1.1em;
+  font-family: Roboto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+.home-header .navbar .navbar-nav > li > a:hover {
+  background-color: #C7A97D;
+  padding: 15px 15px;
+}
+.home-header .navbar-nav {
+  background-color: #a28055;
+}
+.home-header .navbar-default .navbar-nav > .active > a,
+.home-header .navbar-default .navbar-nav > .active > a:focus,
+.home-header .navbar-default .navbar-nav > .active > a:hover {
+  background-color: #7B6341;
+  color: #fff;
+  padding: 15px 15px;
+}
+.home-main section {
+  padding: 3vh 0;
+  margin: 3vh 0;
+}
+.home-main section h2 {
+  margin: 20px 0 20px 0;
+}
+.home-main section header {
+  margin-bottom: 30px;
+}
+.home-main .sermons {
+  background-color: #e8dfd3;
+}
+.home-main .sermons .thumbnail h3 a,
+.home-main .sermons .thumbnail ul li,
+.home-main .sermons .thumbnail p {
+  color: #f5f0e8;
+}
+.home-main .sermons .thumbnail h3 {
+  margin-top: 5px;
+  height: 2em;
+}
+.home-main .sermons .thumbnail h3 a {
+  text-decoration: none;
+}
+.home-main .sermons .thumbnail .caption {
+  background-color: #382d1e;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+.home-main .sermons .thumbnail .caption .sermon-details {
+  list-style-type: none;
+  padding-left: 0;
+}
+.home-main .sermons .thumbnail .caption .btn {
+  text-decoration: none;
+}
+.home-main .schedule {
+  margin-top: 50px;
+}
+.home-main .schedule .event {
+  border-right: 1px solid #999;
+  padding-bottom: 20px;
+}
+.home-main .schedule .event:last-child {
+  border-right: 0px;
+}
+.home-main .be-envolved {
+  background-image: url(/static/img/groups_cropped.jpg);
+  background-attachment: fixed;
+}
+.home-main .be-envolved a,
+.home-main .be-envolved h2,
+.home-main .be-envolved .text {
+  color: #fff;
+}
+.home-main #map {
+  height: 300px;
+  width: 50%;
+}
+.home-main .contacts {
+  padding-left: 5%;
+  padding-top: 2%;
+}
+.home-main .home-events ul,
+.home-main .home-news ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.home-main .home-events ul li,
+.home-main .home-news ul li {
+  margin: 30px 0;
+}
+.home-main .home-events h3 {
+  color: #4293C7;
+}
+.home-main .church-life .item {
+  float: left;
+  margin: 10px 50px 10px 0;
+  position: relative;
+  width: 300px;
+}
+.home-main .church-life .item figcaption {
+  position: absolute;
+  top: 72%;
+  background-color: #020202;
+  color: #fff;
+  width: 100%;
+  padding: 16px;
+  opacity: 0.7;
+  font-weight: 700;
+}
+.home-main .church-life .item {
+  float: none;
+  margin: 10px auto;
+}
+footer {
+  margin-top: 1%;
+  background-color: #c5af90;
+  width: 100%;
+}
+footer ul {
+  list-style-type: none;
+  height: 60px;
+  padding: 20px 0 0 0;
+  margin: 20px auto 0 auto;
+  width: 44%;
+}
+footer ul li {
+  float: left;
+}
+footer ul li a {
+  color: #fff;
+  padding: 20px;
+}
+.header-pages {
+  background-color: #595959;
+  border-bottom: 2px solid #5a482f;
+  width: 100%;
+  height: 120px;
+  z-index: 1000;
+}
+.header-pages .logo img {
+  margin-top: 10px;
+}
+.header-pages .navbar {
+  background-color: transparent;
+  border: none;
+}
+.header-pages .navbar .navbar-collapse {
+  margin: 35px 0 10px 0px;
+}
+.header-pages .navbar .navbar-nav > li > a {
+  font-size: 1.1em;
+  font-family: Roboto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+.header-pages .navbar .navbar-nav > li > a:hover {
+  background-color: #C7A97D;
+  padding: 15px 15px;
+}
+.header-pages .navbar-default .navbar-nav > .active > a,
+.header-pages .navbar-default .navbar-nav > .active > a:focus,
+.header-pages .navbar-default .navbar-nav > .active > a:hover {
+  background-color: #C7A97D;
+  color: #fff;
+  padding: 15px 15px;
+}
+.main-pages main {
+  padding: 0 20px;
+}
+.main-pages .text {
+  margin: 30px 15px;
+}
+.main-pages .text .nav-tabs > li > a {
+  background-color: #f5f0e8;
+  color: #333;
+}
+.main-pages .text .nav-tabs > li.active > a,
+.main-pages .text .nav-tabs > li.active > a:focus,
+.main-pages .text .nav-tabs > li.active > a:hover {
+  background-color: #C79855;
+  color: #fff;
+}
+.main-pages .text .gallery img {
+  padding: 0;
+}
+.main-pages .text h1 {
+  margin-bottom: 20px;
+  position: static;
+  border-left: 10px solid;
+  margin-left: -20px;
+  padding-left: 10px;
+}
+.main-pages .text aside {
+  margin-top: 40px;
+}
+.main-pages .text aside section {
+  margin: 40px 0;
+}
+.main-pages .text aside section h4 {
+  color: #7B6341;
+  border-bottom: 2px solid;
+}
+.main-pages .text aside .aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+.main-pages .text aside .aside ul li {
+  margin-bottom: 10px;
+}
+.main-pages .text aside .aside ul li.active,
+.main-pages .text aside .aside ul li:hover {
+  color: #595959;
+  border-left: 3px solid #4293C7;
+  margin-left: -15px;
+  transition-delay: 0.1s;
+}
+.main-pages .text aside .aside ul li.active a,
+.main-pages .text aside .aside ul li:hover a {
+  padding-left: 12px;
+  transition-delay: 0.1s;
+  color: #4293C7;
+}
+.main-pages .text aside .aside ul li a {
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.main-pages .text aside .sermons-book ul,
+.main-pages .text aside .events ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.main-pages .text aside .sermons-book ul li.book,
+.main-pages .text aside .events ul li.book {
+  line-height: 2em;
+}
+.main-pages .text aside .sermons-book ul li p.date,
+.main-pages .text aside .events ul li p.date {
+  margin: 0 0 5px 0;
+}
+.main-pages .text aside .sermons-book ul li a,
+.main-pages .text aside .events ul li a {
+  line-height: 1.5em;
+}
+.main-pages .text aside .sermons-book ul li a .badge,
+.main-pages .text aside .events ul li a .badge {
+  margin-left: 10px;
+}
+.main-pages .text aside .sermons-book ul li a .btn,
+.main-pages .text aside .events ul li a .btn {
+  margin: 20px 0;
+}
+.main-pages .text aside .events ul li {
+  padding: 0 0 20px 0;
+}
+.main-pages .dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 0.2em 0em;
+}
+.main-pages .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #fff !important;
+  background-color: #fff !important;
+  border: none;
+}
+.main-pages .sermons .sermon_details {
+  margin: 15px 20px 10px 0px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 0 15px 0;
+}
+.main-pages .sermons .sermon_details .col-md-4 {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.main-pages .sermons .sermon_details .col-md-4 img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+}
+.main-pages .sermons .sermons_filter {
+  margin: 30px 20px 30px 0;
+  background-color: #C7A97D;
+  padding: 15px;
+}
+.main-pages .sermons .pagination {
+  display: block;
+  margin-top: 50px;
+}
+.main-pages .sermon-item .row {
+  margin-top: 40px;
+}
+.main-pages .sermon-item .row .col-md-8 {
+  margin-top: 30px;
+}
+.main-pages .audiojs .play-pause {
+  width: 30px!important;
+}
+.main-pages .galleries .item {
+  float: left;
+  margin: 10px 50px 10px 0;
+  position: relative;
+  width: 300px;
+}
+.main-pages .galleries .item figcaption {
+  position: absolute;
+  top: 72%;
+  background-color: #020202;
+  color: #fff;
+  width: 100%;
+  padding: 16px;
+  opacity: 0.7;
+  font-weight: 700;
+}
+.main-pages .galleries .gallery__image {
+  width: 300px;
+}
+.main-pages .contact-page .btn-default {
+  margin-top: 15px;
+}
+.main-pages .contact-page #map {
+  height: 400px;
+  width: 100%;
+}
+.main-pages .events .item {
+  margin: 50px 0;
+}
+.main-pages .events .item .date {
+  font-size: 16px;
+}
+.main-pages .events .item h3 {
+  margin-top: 0;
+}
+.main-pages .facebook-messages {
+  margin-top: 60px;
+}
+.headerText {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  padding: 60px;
+  margin-top: 1em;
+}
+.headerText span {
+  display: block;
+}
+.headerText span.right {
+  text-align: right;
+}
+.headerText b {
+  text-align: right;
+  font-weight: 400;
+  padding-top: 1em;
+  font-style: italic;
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    left: 0% !important;
+    z-index: 0;
+    width: 260px;
+  }
+  .header-pages .logo img {
+    width: 100% !important;
+  }
+  .navbar-header .navbar-toggle {
+    z-index: 100;
+    background-color: #fff;
+    margin-top: 35px;
+  }
+  .navbar .navbar-collapse {
+    position: relative;
+    margin-top: 0;
+  }
+  .home-events,
+  .home-news {
+    margin: 50px 20px;
+  }
+  .be-envolved .row {
+    margin: 0 15px;
+  }
+  #map {
+    width: 100% !important;
+  }
+  footer .menu-footer {
+    height: 120px;
+  }
+  footer ul li a {
+    padding: 0;
+  }
+  .sermons .audiojs {
+    display: none;
+  }
+  .sermon_details .col-md-4 {
+    padding-right: 0;
+  }
+  .main-pages .text {
+    margin: 30px 0;
+  }
+  .main-pages .text aside {
+    margin-top: 45px;
+    position: static;
+    left: 65%;
+    padding: 40px 0;
+  }
+  .header-pages .navbar {
+    z-index: 100;
+  }
+  .header-pages .nav {
+    background-color: #7B6341;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #deddce;
+  }
+}
