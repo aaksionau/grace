@@ -57,16 +57,16 @@
                 http://grace.kharkov.ua/resources/sermons/{{sermon.id}}
             </guid>
             <link>
-				http://grace.kharkov.ua/resources/sermons/{{sermon.id}}
-			</link>
+				http://grace.kharkov.ua/resources/{{sermon.id}}
+            </link>
             <itunes:image href="http://grace.kharkov.ua/static/img/feed.jpg" />
             <description>
 				{{sermon.bible_book.title}} {{sermon.chapter_and_verses}} 				{{sermon.preacher.last_name}} {{sermon.preacher.name}}
-			</description>
+            </description>
             <content:encoded>
                 <![CDATA[{{sermon.description}}]]>
             </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="http://grace.kharkov.ua{% static 'media/sermons/' %}{{sermon.audio}}" />
+            <enclosure length="0" type="audio/mpeg" url="http://grace.kharkov.ua{% static 'media/' %}{{sermon.audio}}" />
             <itunes:duration>00:00:00</itunes:duration>
             <itunes:explicit>clean</itunes:explicit>
             <itunes:keywords />
