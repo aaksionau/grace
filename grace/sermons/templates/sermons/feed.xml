@@ -54,7 +54,7 @@
 			{% endlanguage %}
 			
             <guid isPermaLink="true">
-                http://grace.kharkov.ua/resources/sermons/{{sermon.id}}
+                http://grace.kharkov.ua/resources/{{sermon.id}}
             </guid>
             <link>
 				http://grace.kharkov.ua/resources/sermons/{{sermon.id}}
