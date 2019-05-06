@@ -54,11 +54,11 @@
 			{% endlanguage %}
 			
             <guid isPermaLink="true">
-                http://grace.kharkov.ua/resources/sermons/{{sermon.id}}
+                http://grace.kharkov.ua/resources/{{sermon.id}}
             </guid>
             <link>
 				http://grace.kharkov.ua/resources/{{sermon.id}}
-            </link>
+          </link>
             <itunes:image href="http://grace.kharkov.ua/static/img/feed.jpg" />
             <description>
 				{{sermon.bible_book.title}} {{sermon.chapter_and_verses}} 				{{sermon.preacher.last_name}} {{sermon.preacher.name}}
