@@ -14,7 +14,7 @@
         <div class="thumbnail" style="background-image:url('{% static "/media/" %}{{s.bible_book.image}}');background-repeat: no-repeat;">
           <div class="caption">
             <h3>
-              <a href="{{s.get_absolute_url}}"> {{s.title}}</a>
+              <a href="{{s.get_absolute_url}}"> {{s.title|truncatechars:40}}</a>
             </h3>
             <hr>
             <ul class="sermon-details">
